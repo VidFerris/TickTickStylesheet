@@ -3,6 +3,8 @@ Custom CSS stylesheet for TickTick to make everything more compact and better su
 
 This stylesheet currently breaks certain things, like Kanban mode! I will probably fix this once I actually start using Kanban mode for anything.
 
+You may need to download and install the Archivo Narrow font locally (https://fonts.google.com/specimen/Archivo+Narrow) if the fonts don't work, or if there's an annoying delay between page load and font load.
+
 # Want to run this in a browser?
 
 Firefox: I recommend using Stylus (https://addons.mozilla.org/en-US/firefox/addon/styl-us/) since that's what I use and will probably have the fewest compatibility issues. Stylish should also work.
