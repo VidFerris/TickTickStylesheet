@@ -1,0 +1,513 @@
+/* vietnamese */
+@font-face {
+  font-family: 'Archivo Narrow';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Archivo Narrow Regular'), local('ArchivoNarrow-Regular'), url(https://fonts.gstatic.com/s/archivonarrow/v11/tss0ApVBdCYD5Q7hcxTE1ArZ0bb_iXxi2g.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Archivo Narrow';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Archivo Narrow Regular'), local('ArchivoNarrow-Regular'), url(https://fonts.gstatic.com/s/archivonarrow/v11/tss0ApVBdCYD5Q7hcxTE1ArZ0bb-iXxi2g.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Archivo Narrow';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Archivo Narrow Regular'), local('ArchivoNarrow-Regular'), url(https://fonts.gstatic.com/s/archivonarrow/v11/tss0ApVBdCYD5Q7hcxTE1ArZ0bbwiXw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/*Reduce Padding in Right Click Menu*/
+.task-menu .set-duedate, .task-menu .set-priority {
+    padding-top: 0px !important;
+}
+.task-menu .menu-section {
+    padding: 0px !important;
+}
+.task-menu .set-duedate .quick-set, .task-menu .set-priority .quick-set {
+    margin-top: 0px !important;
+}
+.task-menu .set-duedate .item:not(:last-child), .task-menu .set-priority .item:not(:last-child) {
+    margin-right: 6px !important;
+}
+.task-menu .add-from-template>a, .task-menu .add-to-project>a, .task-menu .assign-to>a, .task-menu .delete-task>a, .task-menu .duplicate-task>a, .task-menu .manage-tags>a, .task-menu .merge-tasks>a, .task-menu .move-to>a, .task-menu .start-task-pomo>a {
+    padding: 0px !important;
+}
+
+/*Hide needless text from right click menu*/
+.task-menu .set-duedate p, .task-menu .set-priority p {
+    display: none !important;
+}
+
+/*Remove excessive multi select padding*/
+.multi-select-menu .option-item {
+    padding-right: 2px !important;
+}
+.multi-select-menu .option-item, .multi-select-menu .subtitle {
+    padding: 0 2px !important;
+}
+
+.multi-select-menu .option-item [class^=icon-] {
+    margin-right: 2px;
+}
+.tag-multi-select .header {
+    padding: 3px !important;
+}
+
+.multi-select-menu .list-wrapper {
+    padding: 0px;
+}
+
+/*Increase Tag Window Width*/
+.tag-multi-select {
+    width: 400px !important;
+}
+
+/*Columned Tags*/
+ul.option.option-root.option-vertical {
+    columns: 3;
+}
+
+/* Increase List Emoji Size */
+.emoji {
+    font-size: 25px !important;
+}
+
+/* Increase Tag Space to Fit Emoji */
+.tag-item {
+    height: 27px !important;
+    line-height: 26px !important;
+	padding: 0px !important;
+}
+
+/* Increase Tag Window Max Height*/
+.tag-multi-select .select-list {
+    max-height: 400px !important;
+}
+
+.tool-bar .t-search .search-form .search-box {
+    width: 156px !important;
+}
+
+/* remove animated sync bar */
+.tool-bar .indicator {
+    display: none;
+}
+
+/* change font */
+* {
+    font-family: 'Archivo Narrow', sans-serif !important;
+    font-weight: 100 !important;
+}
+
+
+div, input {
+    font-size: 20px !important;
+}
+
+span {
+    font-size: 18px !important;
+}
+
+.text-tny {
+    font-size: 16px !important;
+}
+
+.task .tips .project-hint .project-name {
+ max-width:200px  !important;
+}
+
+.g-full-right {
+ left:200px;
+ right:0;
+     width:calc(100% - 200px) !important;
+}
+
+
+.l-divider {
+ height:1px !important;
+ margin:2px auto !important;
+ width:calc(100% - 40px) !important
+}
+
+div#right-view{
+    height:calc(100% - 420px) !important
+}
+
+
+#task-list-view {
+ width: calc(100% - 200px - 450px) !important;
+}
+
+.g-right {
+ width:450px !important;
+}
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6, h6.text-tny {
+ font-size: 26px !important;
+}
+
+h6.text-info.text-tny.section-title{
+    color:#797979 !important;
+    text-decoration: underline !important;
+}
+
+/*Aligning checkboxes*/
+span.t-check {
+    margin-top: -4px !important;
+}
+
+
+.c-task .icon-checkbox, .c-task .icon-real-subtask, .c-task .icon-schedule, .c-task .icon-subtask, .r-task .icon-checkbox, .r-task .icon-real-subtask, .r-task .icon-schedule, .r-task .icon-subtask, .task .icon-checkbox, .task .icon-real-subtask, .task .icon-schedule, .task .icon-subtask, .td-header .icon-checkbox, .td-header .icon-real-subtask, .td-header .icon-schedule, .td-header .icon-subtask {
+    color: 
+#ffffff !important;
+fill:
+    #aaaaaa !important;
+    box-shadow: inset 0px 0px 6px #aaaaaa,0px 0px 6px #aaaaaa !important;
+}
+
+.c-task.priority-high .icon-checkbox, .c-task.priority-high .icon-real-subtask, .c-task.priority-high .icon-schedule, .c-task.priority-high .icon-subtask, .r-task.priority-high .icon-checkbox, .r-task.priority-high .icon-real-subtask, .r-task.priority-high .icon-schedule, .r-task.priority-high .icon-subtask, .task.priority-high .icon-checkbox, .task.priority-high .icon-real-subtask, .task.priority-high .icon-schedule, .task.priority-high .icon-subtask, .td-header.priority-high .icon-checkbox, .td-header.priority-high .icon-real-subtask, .td-header.priority-high .icon-schedule, .td-header.priority-high .icon-subtask {
+    color: #ff3180 !important;
+fill:    #ff3180 !important;
+    box-shadow: inset 0px 0px 12px #ff3180,0px 0px 8px #ff3180 !important;
+}
+
+.c-task.priority-low .icon-checkbox, .c-task.priority-low .icon-real-subtask, .c-task.priority-low .icon-schedule, .c-task.priority-low .icon-subtask, .r-task.priority-low .icon-checkbox, .r-task.priority-low .icon-real-subtask, .r-task.priority-low .icon-schedule, .r-task.priority-low .icon-subtask, .task.priority-low .icon-checkbox, .task.priority-low .icon-real-subtask, .task.priority-low .icon-schedule, .task.priority-low .icon-subtask, .td-header.priority-low .icon-checkbox, .td-header.priority-low .icon-real-subtask, .td-header.priority-low .icon-schedule, .td-header.priority-low .icon-subtask {
+    color: 
+#4b6fde !important;
+fill:
+    #4b6fde !important;
+    box-shadow: inset 0px 0px 8px #4b6fde,0px 0px 8px #4b6fde !important;
+}
+
+.c-task.priority-medium .icon-checkbox, .c-task.priority-medium .icon-real-subtask, .c-task.priority-medium .icon-schedule, .c-task.priority-medium .icon-subtask, .r-task.priority-medium .icon-checkbox, .r-task.priority-medium .icon-real-subtask, .r-task.priority-medium .icon-schedule, .r-task.priority-medium .icon-subtask, .task.priority-medium .icon-checkbox, .task.priority-medium .icon-real-subtask, .task.priority-medium .icon-schedule, .task.priority-medium .icon-subtask, .td-header.priority-medium .icon-checkbox, .td-header.priority-medium .icon-real-subtask, .td-header.priority-medium .icon-schedule, .td-header.priority-medium .icon-subtask {
+    color: 
+#ffc817 !important;
+fill:
+    #ffc817 !important;
+    box-shadow: inset 0px 0px 10px #ffc817,0px 0px 8px #ffc817 !important;
+}
+
+
+
+
+/* Element | https://www.ticktick.com/#q/all/today/5e0e01afe4b0b6f34927fddf */
+
+#project-list-view {
+  /* padding-bottom: 41px; */
+  padding-bottom: 41 !important;
+}
+
+#project-list-view {
+ padding-bottom: 48px !important;
+}
+
+
+
+
+/* index.d5aca556.css | https://d3qg9zffrnl4ph.cloudfront.net/static/build/app/css/index.d5aca556.css */
+
+@media only screen and (min-width: 921px) and (max-width: 1020px) {
+  .g-left {
+    /* left: -260px; */
+    left: 0 !important;
+  }
+}
+
+.g-center {
+  /* left: 260px; */
+  left: 200px !important;
+}
+
+.g-left {
+  /* width: 260px; */
+  width: 200px !important;
+}
+
+
+/* index.d5aca556.css | https://d3qg9zffrnl4ph.cloudfront.net/static/build/app/css/index.d5aca556.css */
+
+@media only screen and (min-width: 461px) and (max-width: 920px) {
+  .g-left {
+    /* left: -260px; */
+    left: 0 !important;
+  }
+}
+
+
+/* Inline #253 | https://ticktick.com/#p/5e0e01aae4b0b6f34927ef36/kanban */
+
+
+/* index.d5aca556.css | https://d3qg9zffrnl4ph.cloudfront.net/static/build/app/css/index.d5aca556.css */
+
+#pomodoro-timer .wrapper .detail {
+  /* padding: 12px 64px 12px 24px; */
+  padding: 5px 6px 2px 4px !important;
+}
+
+#pomodoro-timer .wrapper {
+  /* height: 58px; */
+  height: 48px !important;
+}
+
+#pomodoro-timer .wrapper .pomodoro-settings {
+  /* display: none; */
+  display: block !important;
+}
+
+#pomodoro-timer .wrapper .icons {
+ right:4px !important;
+}
+
+
+
+
+
+/* index.d5aca556.css | https://d3qg9zffrnl4ph.cloudfront.net/static/build/app/css/index.d5aca556.css */
+
+@media only screen and (min-width: 461px) and (max-width: 920px) {
+  .g-right {
+    /* width: 70%; */
+    width: 50% !important;
+  }
+}
+
+@media only screen and (max-width: 1020px) {
+  .tasklist .tl-bar {
+    /* padding-left: 60px; */
+    padding-left: 12px !important;
+  }
+}
+
+.tasklist .tl-bar {
+  /* padding: 24px 24px 20px 28px; */
+  padding: 4px 20px 8px 20px !important;
+}
+
+.tl-quick .task-input {
+  /* padding-left: 12px; */
+  /* padding-right: 12px; */
+  padding-left: 6px !important;
+  padding-right: 6px !important;
+}
+
+.tasklist .tl-quick {
+  /* margin: 0 28px 20px; */
+  margin: 0 20px 2px !important;
+}
+
+
+/* Inline #1 | https://www.ticktick.com/#q/all/today/5e0e01afe4b0b6f34927fddd */
+
+.tasklist .tl-quick {
+  /* margin: 0 20px 2px; */
+  margin: 0 10px 2px !important;
+}
+
+/* index.d5aca556.css | https://d3qg9zffrnl4ph.cloudfront.net/static/build/app/css/index.d5aca556.css */
+
+.task .l-task {
+  /* padding-left: 12px; */
+  /* padding-right: 12px; */
+  padding-left: 6px !important;
+  padding-right: 6px !important;
+}
+
+.task .l-task-bg {
+  /* margin: 0 16px; */
+  /* border-radius: 4px; */
+  margin: 0 8px 0 16px !important;
+  border-radius: 2px !important;
+}
+
+
+/* Element | https://www.ticktick.com/#s//5e0dfe03970af5695c64162e */
+
+.content-editor > div:nth-child(1) {
+  /* width: 598px; */
+  width: 100% !important;
+}
+
+/* Element | https://www.ticktick.com/#s//5e0dfe03970af5695c64162e */
+
+#content-view {
+  /* width: 598px; */
+  width: 100% !important;
+}
+
+/* Element | https://www.ticktick.com/#s//5e0dfe03970af5695c64162e */
+
+#td-caption {
+  /* width: 598px; */
+  width: 100% !important;
+}
+
+/* Element | https://www.ticktick.com/#s//5e0dfe03970af5695c64162e */
+
+#td-container {
+  /* width: 598px; */
+  width: 100% !important;
+}
+
+
+/* index.d5aca556.css | https://d3qg9zffrnl4ph.cloudfront.net/static/build/app/css/index.d5aca556.css */
+
+@media only screen and (min-width: 461px) and (max-width: 920px) {
+  .g-right {
+    /* width: 70%; */
+    width: 50% !important;
+  }
+}
+
+/* Element | https://www.ticktick.com/#s//5e0dfe03970af5695c64162e */
+
+.content-editor > div:nth-child(1) {
+  /* width: 598px; */
+  width: 100% !important;
+}
+
+/* Element | https://www.ticktick.com/#s//5e0dfe03970af5695c64162e */
+
+#content-view {
+  /* width: 598px; */
+  width: 100% !important;
+}
+
+/* Element | https://www.ticktick.com/#s//5e0dfe03970af5695c64162e */
+
+#td-caption {
+  /* width: 598px; */
+  width: 100% !important;
+}
+
+/* Element | https://www.ticktick.com/#s//5e0dfe03970af5695c64162e */
+
+#td-container {
+  /* width: 598px; */
+  width: 100% !important;
+}
+
+
+
+.g-left .upgrade-button {
+ display: none !important;
+}
+
+
+.lists {
+  /* padding-top: 72px; */
+  padding-top: 42px !important;
+}
+
+.tool-bar {
+  /* padding: 22px 18px; */
+  padding: 6px 6px !important;
+}
+
+.lists .fake-li, .lists .l-c, .lists .l-new, .lists .p-sort-help, .lists li {
+  /* padding: 0 12px; */
+  padding: 0 2px !important;
+}
+
+.lists .fake-li > a, .lists .l-c > a, .lists .l-new > a, .lists .p-sort-help > a, .lists li > a {
+  /* padding: 0 8px; */
+  padding: 0 2px !important;
+}
+
+.lists .l-l-t {
+  /* margin-bottom: 10px; */
+  /* margin-top: 8px; */
+  margin-bottom: 0 !important;
+  margin-top: 0 !important;
+}
+
+.lists .l-tabs {
+  /* padding: 0 20px; */
+  padding: 0 2px !important;
+}
+
+.lists .fake-li > a .l-title, .lists .l-c > a .l-title, .lists .l-new > a .l-title, .lists .p-sort-help > a .l-title, .lists li > a .l-title {
+  /* min-width: 150px; */
+  min-width: 0 !important;
+}
+
+/* Element | https://www.ticktick.com/#s/ */
+
+#smart-project-view-area {
+  /* width: 259px; */
+  width: 100% !important;
+}
+
+/* Element | https://www.ticktick.com/#s/ */
+
+#project-list-scroller {
+  /* width: 259px; */
+  width: 100% !important;
+}
+
+/* Element | https://www.ticktick.com/#s/ */
+
+.project-list-inner {
+  /* width: 259px; */
+  width: 100% !important;
+}
+
+/* Element | https://www.ticktick.com/#s/ */
+
+#project-view-area {
+  /* width: 259px; */
+  width: 100% !important;
+}
+
+
+/* Reduce Task Size from 38px to 20px
+
+.task .title-wrap .title [contenteditable] {
+  min-height: 20px;
+}
+
+.task .t-inner {
+  height: 100%;
+  line-height: 20px;
+}
+
+.task .t-menu-toggle {
+  display: none;
+}
+
+.task {
+  position: relative;
+  height: 20px !important;
+  top: 0px !important;
+}
+
+.tasklist .section > ul {
+  height: auto !important;
+}
+
+.tasklist .section {
+  position: relative;
+  top: 0px !important;
+}
+
+
+section.section:nth-child(1) > ul:nth-child(2) > li:nth-child(2) {
+  top: 0px;
+}
+*/
