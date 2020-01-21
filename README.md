@@ -14,3 +14,6 @@ Chrome: Find an add-on which applies custom stylesheets.
 Download Nativefier (https://github.com/jiahaog/nativefier), and run:
 
 nativefier --zoom 0.8 --single-instance "https://ticktick.com/#q/all/today/" --inject TickTick.css  --hide-window-frame -n TickTick
+
+# Want to throw money at me in thanks?
+you can do this at https://ko-fi.com/randomini no pressure tho
