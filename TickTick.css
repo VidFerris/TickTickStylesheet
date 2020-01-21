@@ -26,10 +26,62 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
+/*EDIT: Change header fonts here!
+For help, look at:
+https://www.w3schools.com/cssref/css_websafe_fonts.asp and
+https://www.w3schools.com/howto/howto_google_fonts.asp 
+*/
+
+span.cm-header.cm-header-1 {
+    font-size: 50px !important;
+	font-weight: 100 !important;
+	font-family: Impact, Charcoal, sans-serif !important;
+}
+
+span.cm-header.cm-header-2 {
+    font-size: 40px !important;
+	font-weight: 100 !important;
+	font-family: Impact, Charcoal, sans-serif !important;
+}
+
+span.cm-header.cm-header-3 {
+    font-size: 30px !important;
+	font-weight: 100 !important;
+	font-family: Impact, Charcoal, sans-serif !important;
+}
+
+span.cm-header.cm-header-4 {
+    font-size: 20px !important;
+	font-family: "Times New Roman", Times, serif !important;
+}
+
+span.cm-header.cm-header-5 {
+    font-size: 20px !important;
+	font-family: "Courier New", Courier, monospace !important;
+}
+
+span.cm-header.cm-header-6 {
+    font-size: 20px !important;
+	font-family: "Comic Sans MS", cursive, sans-serif !important;
+}
+
+span.cm-strong {
+	font-weight: 700 !important;
+}
+
+/*No cutoff or resize in description*/
+div > div > div > div > div > div > div > div > div > div > a.contentUrl {
+    width: auto;
+    max-width: 1000px;
+    white-space: normal;
+    font-size: 20px !important;
+    display: inline;
+}
+
 /*Link Max Width Cutoff*/
 a.contentUrl {
     max-width: 150px;
-    width: 150px;
+    width: auto;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
