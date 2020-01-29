@@ -28,6 +28,7 @@ you can do this at https://ko-fi.com/randomini no pressure tho
 # List of Edits
 - Default fonts replaced with the Archivo Narrow font to maximise horizontal text density.
 - Glowy checkboxes! More important checkboxes are more glowy.
+- Keeps all item grab target handles visible rather than only making them visible when you mouseover.
 - Custom markdown formatting:
 ![g](https://i.imgur.com/AxjlYdm.png "g")
 - Denser right click menu and multiple columns for tags:
