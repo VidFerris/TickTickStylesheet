@@ -1,9 +1,16 @@
 # TickTickStylesheet
 Custom CSS stylesheet for TickTick to make everything more compact and better suited to my custom setup. Designed for use at 80% zoom level. The reason for this is that it's easier to make the fonts much larger using CSS and subsequently shrink the entire page than it is to override the Javascript which expects tasks to have a certain set height.
 
-This stylesheet currently breaks certain things, like Kanban mode! I will probably fix this once I actually start using Kanban mode for anything.
+This stylesheet turns this:
 
-You may need to download and install the Archivo Narrow font locally (https://fonts.google.com/specimen/Archivo+Narrow) if the fonts don't work, or if there's an annoying delay between page load and font load.
+![low information density](https://i.imgur.com/PXxNAot.png "old stylesheet")
+
+Into this:
+
+![much nicer](https://i.imgur.com/uLvNo0T.png "new stylesheet")
+
+
+This stylesheet currently breaks certain things, like Kanban mode! I will probably fix this if I actually start using Kanban mode for anything. You may need to download and install the Archivo Narrow font locally (https://fonts.google.com/specimen/Archivo+Narrow) if the fonts don't work, or if there's an annoying delay between page load and font load.
 
 # Want to run this in a browser?
 
@@ -17,3 +24,13 @@ nativefier --zoom 0.8 --single-instance "https://ticktick.com/#q/all/today/" --i
 
 # Want to throw money at me in thanks?
 you can do this at https://ko-fi.com/randomini no pressure tho
+
+# List of Edits
+- Default fonts replaced with the Archivo Narrow font to maximise horizontal text density.
+- Glowy checkboxes! More important checkboxes are more glowy.
+- Custom markdown formatting:
+![g](https://i.imgur.com/AxjlYdm.png "g")
+- Denser right click menu and multiple columns for tags:
+![g](https://i.imgur.com/PiImsXO.png "g")
+- Denser right-click menus, reduced link width, and removal of certain tooltips:
+![g](https://i.imgur.com/id0dFyI.png "g")
