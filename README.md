@@ -22,6 +22,14 @@ Download Nativefier (https://github.com/jiahaog/nativefier), and run:
 
 nativefier --zoom 0.8 --single-instance "https://ticktick.com/#q/all/today/" --inject TickTick.css  --hide-window-frame -n TickTick
 
+# Those things down the bottom right don't show up for me!
+They are widgets running in Rainmeter (https://www.rainmeter.net/) rather than integrated page elements. The ones visible in the screenshot are edited versions of:
+- illustro\Network\Network.ini and illustro\System\System.ini
+- MinimalTimer\MinimalTimer.ini (An edit of https://www.deviantart.com/monochromatope/art/Minimal-Timer-1-0-568693681)
+- Elegance2\Clock\Clock_hori1.ini and Elegance2\Date\Date_vert1.ini (Edits of https://www.deviantart.com/lilshizzy/art/Rainmeter-Elegance-2-244373054)
+
+The originals are released under Creative Commons licenses, so I should be able to share these edits in this repository. (Coming soon!)
+
 # Want to throw money at me in thanks?
 you can do this at https://ko-fi.com/randomini no pressure tho
 
