@@ -1,5 +1,5 @@
 # TickTickStylesheet
-Custom CSS stylesheet for TickTick to make everything more compact and better suited to my custom setup. Designed for use at 80% zoom level. The reason for this is that it's easier to make the fonts much larger using CSS and subsequently shrink the entire page than it is to override the Javascript which expects tasks to have a certain set height.
+Custom CSS stylesheet + JS Clock/Timer for TickTick to make everything more compact and better suited to my custom setup. Designed for use at 80% zoom level. The reason for this is that it's easier to make the fonts much larger using CSS and subsequently shrink the entire page than it is to override the Javascript which expects tasks to have a certain set height.
 
 This stylesheet turns this:
 
@@ -7,14 +7,14 @@ This stylesheet turns this:
 
 Into this:
 
-![much nicer](https://i.imgur.com/uLvNo0T.png "new stylesheet")
+![much nicer](https://i.imgur.com/x2jFBIm.png "new stylesheet")
 
 
 This stylesheet currently breaks certain things, like Kanban mode! I will probably fix this if I actually start using Kanban mode for anything. You may need to download and install the Archivo Narrow font locally (https://fonts.google.com/specimen/Archivo+Narrow) if the fonts don't work, or if there's an annoying delay between page load and font load.
 
 # Want to run this in a browser?
 
-Firefox: I recommend using Stylus (https://addons.mozilla.org/en-US/firefox/addon/styl-us/) since that's what I use and will probably have the fewest compatibility issues. Stylish should also work.
+Firefox: For CSS, I recommend using Stylus (https://addons.mozilla.org/en-US/firefox/addon/styl-us/) since that's what I use and will probably have the fewest compatibility issues. Stylish should also work. For JS, I recommend Tampermonkey (https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/).
 Chrome: Find an add-on which applies custom stylesheets.
 
 # Want to run this as its own app?
@@ -23,12 +23,7 @@ Download Nativefier (https://github.com/jiahaog/nativefier), and run:
 nativefier --zoom 0.8 --single-instance "https://ticktick.com/#q/all/today/" --inject TickTick.css  --hide-window-frame -n TickTick
 
 # Those things down the bottom right don't show up for me!
-They are widgets running in Rainmeter (https://www.rainmeter.net/) rather than integrated page elements. The ones visible in the screenshot are edited versions of:
-- illustro\Network\Network.ini and illustro\System\System.ini
-- MinimalTimer\MinimalTimer.ini (An edit of https://www.deviantart.com/monochromatope/art/Minimal-Timer-1-0-568693681)
-- Elegance2\Clock\Clock_hori1.ini and Elegance2\Date\Date_vert1.ini (Edits of https://www.deviantart.com/lilshizzy/art/Rainmeter-Elegance-2-244373054)
-
-The originals are released under Creative Commons licenses, so I should be able to share these edits in this repository. (Coming soon!)
+You need to run the custom Javascript. If it doesn't work, find the line "setTimeout(initLowerRight, 1000\*5);" in the Javascript file and change the 5 to a larger number. This is a delay before loading in the custom page components, and it needs to occur after the main TickTick page has loaded.
 
 # Want to throw money at me in thanks?
 you can do this at https://ko-fi.com/randomini no pressure tho
@@ -43,3 +38,5 @@ you can do this at https://ko-fi.com/randomini no pressure tho
 ![g](https://i.imgur.com/PiImsXO.png "g")
 - Denser right-click menus, reduced link width, and removal of certain tooltips:
 ![g](https://i.imgur.com/id0dFyI.png "g")
+- Replaced the Rainmeter widgets with custom JS, so that right-click menu will open on top of the widgets:
+![g](https://i.imgur.com/UUqfVmF.png "g")
