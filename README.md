@@ -25,9 +25,6 @@ nativefier --zoom 0.8 --single-instance "https://ticktick.com/#q/all/today/" --i
 # Those things down the bottom right don't show up for me!
 You need to run the custom Javascript. If it doesn't work, find the line "setTimeout(initLowerRight, 1000\*5);" in the Javascript file and change the 5 to a larger number. This is a delay before loading in the custom page components, and it needs to occur after the main TickTick page has loaded.
 
-# Want to throw money at me in thanks?
-you can do this at https://ko-fi.com/randomini no pressure tho
-
 # List of Edits
 - Default fonts replaced with the Archivo Narrow font to maximise horizontal text density.
 - Glowy checkboxes! More important checkboxes are more glowy.
